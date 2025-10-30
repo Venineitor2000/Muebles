@@ -33,20 +33,24 @@ html, body {
     }
 
 
-/* --- TARJETA DE PRODUCTO (Mobile-First) --- */
+/* --- TARJETA DE PRODUCTO (Mobile-First) ---
+  Cada tarjeta es una "diapositiva"
+*/
 .producto-card {
-    /* ... (otras reglas) ... */
+    /* Ocupa el 100% de la altura de la vista.
+      ¡Esto es lo que garantiza que se vea 1 producto a la vez!
+    */
+    height: 100vh;
+    /* Le decimos que este es un punto de "encaje" */
+    scroll-snap-align: start;
+    /* Layout interno de la tarjeta */
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; /* <-- CAMBIO AQUÍ: Alinea al inicio (arriba) */
+    justify-content: center; /* Centra el contenido verticalmente */
     align-items: center;
-    /* MODIFICACIÓN DE PADDING:
-       Mantenemos los 20px a los lados, pero añadimos
-       un 10% de la altura de la vista (vh) arriba
-       para darle un respiro.
-    */
-    padding: 10vh 20px 20px 20px;
-    /* ... (otras reglas) ... */
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para la tarjeta */
+    border-bottom: 1px solid #eee; /* Separador sutil */
 }
 
 /* Contenedor de la imagen */
@@ -55,7 +59,7 @@ html, body {
     /* La imagen ocupa máximo el 60% de la altura.
       Esto deja espacio SIEMPRE para el nombre, precio y botón abajo.
     */
-    max-height: 40vh;
+    max-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
