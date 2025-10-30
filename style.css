@@ -59,7 +59,7 @@ html, body {
     /* La imagen ocupa máximo el 60% de la altura.
       Esto deja espacio SIEMPRE para el nombre, precio y botón abajo.
     */
-    max-height: 60vh;
+    max-height: 40vh;
     display: flex;
     justify-content: center;
     align-items: center;
