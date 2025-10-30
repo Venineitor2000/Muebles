@@ -1,0 +1,202 @@
+/* --- Reseteo Básico y Estilos Globales --- */
+* {
+    box-sizing: border-box; /* Importante para el layout */
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f4f4f4; /* Un gris muy suave de fondo */
+    color: #333;
+}
+
+/* --- CONTENEDOR PRINCIPAL (Mobile-First) ---
+  Aquí ocurre la magia del "Scroll Snap"
+*/
+.catalogo-container {
+    height: 100vh; /* Ocupa el 100% de la altura de la vista */
+    overflow-y: scroll; /* Permite scroll vertical */
+    /* El núcleo del requisito:
+      - scroll-snap-type: y (eje vertical)
+      - mandatory: Fuerza a "encajar" siempre en un producto.
+    */
+    scroll-snap-type: y mandatory;
+    /* Oculta la barra de scroll (estética) */
+    -ms-overflow-style: none; /* IE y Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+    .catalogo-container::-webkit-scrollbar {
+        display: none; /* Chrome, Safari y Opera */
+    }
+
+
+/* --- TARJETA DE PRODUCTO (Mobile-First) ---
+  Cada tarjeta es una "diapositiva"
+*/
+.producto-card {
+    /* Ocupa el 100% de la altura de la vista.
+      ¡Esto es lo que garantiza que se vea 1 producto a la vez!
+    */
+    height: 100vh;
+    /* Le decimos que este es un punto de "encaje" */
+    scroll-snap-align: start;
+    /* Layout interno de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo blanco para la tarjeta */
+    border-bottom: 1px solid #eee; /* Separador sutil */
+}
+
+/* Contenedor de la imagen */
+.producto-imagen {
+    width: 100%;
+    /* La imagen ocupa máximo el 60% de la altura.
+      Esto deja espacio SIEMPRE para el nombre, precio y botón abajo.
+    */
+    max-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .producto-imagen img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* Asegura que la imagen se vea completa, sin deformar */
+        cursor: pointer;
+        transition: transform 0.2s ease;
+    }
+
+        .producto-imagen img:hover {
+            transform: scale(1.03); /* Efecto sutil en desktop */
+        }
+
+/* Contenedor de la información */
+.producto-info {
+    text-align: center;
+}
+
+.producto-nombre {
+    font-size: 1.5rem; /* 24px */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Estilo del Precio.
+  Si el <p> no existe, este espacio colapsa solo.
+  ¡Cumple el requisito de ser opcional!
+*/
+.producto-precio {
+    font-size: 1.25rem; /* 20px */
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* Botón de WhatsApp */
+.producto-wsp {
+    display: inline-block;
+    background-color: #25D366; /* Verde WhatsApp */
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+    .producto-wsp:hover {
+        background-color: #1EAB51; /* Tono más oscuro al pasar el mouse */
+    }
+
+
+/* --- LIGHTBOX (Visor de Imagen) ---
+  Estilos para la ventana modal de la imagen.
+*/
+.lightbox {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Superpuesto a todo */
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo negro translúcido */
+    /* Centrado */
+    justify-content: center;
+    align-items: center;
+}
+
+    .lightbox.visible {
+        display: flex; /* Se muestra cambiando a 'flex' */
+    }
+
+.lightbox-contenido {
+    /* La imagen ocupa máximo el 90% de la vista */
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.lightbox-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ======================================================
+  --- ADAPTACIÓN RESPONSIVE (Desktop) ---
+  Usamos @media query. Si la pantalla es más ancha de 768px...
+  ======================================================
+*/
+@media (min-width: 768px) {
+
+    /* 1. Desactivamos el "Scroll Snap"
+      (height: auto y overflow: auto)
+    */
+    .catalogo-container {
+        height: auto;
+        overflow-y: auto;
+        scroll-snap-type: none; /* Se desactiva el snap */
+        padding: 40px;
+        /* 2. Convertimos el contenedor en una CUADRÍCULA (Grid)
+        */
+        display: grid;
+        /*
+          Crea columnas automáticas:
+          - Intenta que midan 350px (minmax)
+          - Si no caben, se ajustan (1fr)
+          - auto-fit: Rellena el espacio
+        */
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 30px; /* Espacio entre tarjetas */
+    }
+
+    /* 3. Ajustamos las tarjetas para la cuadrícula
+    */
+    .producto-card {
+        height: auto; /* La altura la define el contenido */
+        border: 1px solid #ddd;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        padding: 30px;
+    }
+
+    .producto-imagen {
+        height: 300px; /* Altura fija para la imagen en desktop */
+        max-height: none;
+    }
+}
