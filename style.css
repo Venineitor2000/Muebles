@@ -48,7 +48,7 @@ html, body {
     flex-direction: column;
     justify-content: center; /* Centra el contenido verticalmente */
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     background-color: #ffffff; /* Fondo blanco para la tarjeta */
     border-bottom: 1px solid #eee; /* Separador sutil */
 }
