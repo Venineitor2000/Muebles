@@ -200,3 +200,67 @@ html, body {
         max-height: none;
     }
 }
+
+/* ======================================================
+  --- PROMPT DE SCROLL (Solo en Mobile) ---
+  ======================================================
+*/
+
+/* 1. Definimos la animación de "bote y desvanecimiento" */
+@keyframes bounce-and-fade {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    20% {
+        transform: translate(-50%, -10px);
+    }
+
+    40% {
+        transform: translate(-50%, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(-50%, 0);
+    }
+}
+
+/* 2. Estilos base del contenedor del icono */
+.scroll-prompt {
+    /* Oculto por defecto en todos lados */
+    display: none;
+    opacity: 0;
+    /* Posición absoluta en la parte inferior-central de la tarjeta */
+    position: absolute;
+    bottom: 20px; /* A 20px del borde inferior */
+    left: 50%;
+    /* Asegura que no puedas hacerle clic por accidente */
+    pointer-events: none;
+    /* Color del icono (un gris semitransparente) */
+    color: rgba(0, 0, 0, 0.4);
+}
+
+/* 3. LA MAGIA:
+   Solo en pantallas móviles (max-width: 767px)
+   Y solo en el PRIMER HIJO (.producto-card:first-child)
+*/
+@media (max-width: 767px) {
+
+    .producto-card:first-child .scroll-prompt {
+        display: block; /* Lo hacemos visible */
+        /* Aplicamos la animación:
+      - Nombre: bounce-and-fade
+      - Duración: 6 segundos
+      - Tipo: ease-out
+      - forwards: Mantiene el estado final (opacity: 0)
+    */
+        animation: bounce-and-fade 6s ease-out forwards;
+    }
+}
