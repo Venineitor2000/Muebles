@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
      * Asegúrate de que estas imágenes existan en la carpeta "Fotos/"
      */
     const nombresFotos = [
-        "1 (1).png",
-        "1 (2).png",
+        "BARRA DE BAR DE 1.60MT X 1MT.png",
+        "COMODA CON CAJONES Y VIDRIO ARRIBA 1.30MTS X 0.5CM.png",
         "1 (3).png",
         "1 (4).png",
         "1 (5).png",
