@@ -89,7 +89,16 @@ html, body {
     margin-bottom: 10px;
 }
 
-
+/* Estilo del Precio.
+  Si el <p> no existe, este espacio colapsa solo.
+  ¡Cumple el requisito de ser opcional!
+*/
+.producto-precio {
+    font-size: 1.25rem; /* 20px */
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
 
 /* Botón de WhatsApp */
 .producto-wsp {
