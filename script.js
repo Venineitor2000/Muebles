@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="producto-info">
                 <h2 class="producto-nombre">${nombreProducto}</h2>
                 
-                <a href="https://wa.me/+5493415487108?text=Hola!%20Me%20interesa%20el%20producto%20${encodeURIComponent(nombreProducto)}" class="producto-wsp" target="_blank">
+                <a href="https://wa.me/+5493415460211?text=Hola!%20Me%20interesa%20el%20producto%20${encodeURIComponent(nombreProducto)}" class="producto-wsp" target="_blank">
                     Consultar por WhatsApp
                 </a>
             </div>
