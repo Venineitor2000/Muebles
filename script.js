@@ -1,69 +1,80 @@
-// Espera a que todo el contenido de la página (HTML) esté cargado
+// Espera a que todo el contenido de la pï¿½gina (HTML) estï¿½ cargado
 document.addEventListener("DOMContentLoaded", () => {
 
     // ======================================================
-    // --- NUEVA SECCIÓN: GENERACIÓN DINÁMICA DE PRODUCTOS ---
+    // --- NUEVA SECCIï¿½N: GENERACIï¿½N DINï¿½MICA DE PRODUCTOS ---
     // ======================================================
 
     /**
-     * ¡Aquí defines tu catálogo!
-     * Simplemente agrega los nombres de archivo de tus imágenes.
-     * Asegúrate de que estas imágenes existan en la carpeta "Fotos/"
+     * ï¿½Aquï¿½ defines tu catï¿½logo!
+     * Simplemente agrega los nombres de archivo de tus imï¿½genes.
+     * Asegï¿½rate de que estas imï¿½genes existan en la carpeta "Fotos/"
      */
     const nombresFotos = [
+        "APLIQUE DE CAIRELES.png",
+        "ARAÃ‘A COLGANNTE.png",
+        "ARAÃ‘A DE CAIRELES.png",
+        "bahiut madera 2.20mt x 0.47.png",
+        "BANQUETA TAPIZADA.png",
+        "BARCITO BODEGA 0.60CM X 0.36.png",
         "BARRA DE BAR DE 1.60MT X 1MT.png",
+        "BIBLIOTECA 1.70MT DE ALTO X0.70CM X 0.50CM.png",
+        "BUTACA MADERA.png",
+        "CAJONERA 0.50CM X 0.38 CM.png",
         "COMODA CON CAJONES Y VIDRIO ARRIBA 1.30MTS X 0.5CM.png",
-        "1 (3).png",
-        "1 (4).png",
-        "1 (5).png",
-        "1 (6).png",
-        "1 (7).png",
-        "1 (8).png",
-        "1 (9).png",
-        "1 (10).png",
-        "1 (11).png",
-        "1 (12).png",
-        "1 (13).png",
-        "1 (14).png",
-        "1 (15).png",
-        "1 (16).png",
-        "1 (17).png",
-        "1 (18).png",
-        "1 (19).png",
-        "1 (20).png",
-        "1 (21).png",
-        "1 (22).png",
-        "1 (23).png",
-        "1 (24).png",
-        "1 (25).png",
-        "1 (26).png",
-        "1 (27).png",
-        "1 (28).png",
-        "1 (29).png",
-        "1 (30).png",
-        "1 (31).png",
-        "1 (32).png",
-        "1 (33).png",
-        "1 (34).png",
-        "1 (35).png",
-        "1 (36).png",
-        "1 (37).png",
-        "1 (38).png",
-        "1 (39).png",
-        "1 (40).png",
-        "1 (41).png",
-        "1 (42).png",
-        "1 (43).png",
-        "1 (44).png",
-        "1 (45).png",
-        "1 (46).png",
-        "1 (47).png",
-        "1 (48).png",
-        "1 (49).png",
-        "1 (50).png",
-        "1 (51).png"
-        // Añade más fotos aquí si es necesario
+        "CUADRO ALJIBE.png",
+        "CUADRO BARCO.png",
+        "CUADRO JARRON.png",
+        "CUADRO MADONNA.png",
+        "CUADRO NATURALEZA MUERTA.png",
+        "CUADRO PAISAJE.png",
+        "ESCRITORIO ANTIGUO 1.30MT X 0.7CM.png",
+        "ESCUDO 025CM X 0.20 CM.png",
+        "ESPADAS 0.25CM X 0.20CM.png",
+        "ESPEJO 2MTS X 1MT.png",
+        "ESPEJO BORDE LAQUEADO NEGRO 1MT X 0.6 CON REBORDE.png",
+        "ESPEJO MADERA 1.35MTS X 0.89.png",
+        "ESTATUA 0.30CM.png",
+        "JUEGO LIVING 1 SILLON 3 CUERPOS Y DOS DE 1 CUERPO.png",
+        "LAMPARA.png",
+        "LAMPARA AZUL.png",
+        "LAVARROPAS DREAM EXCELLENT CARGA FRONTAL 0.85CM X 0.60CM.png",
+        "MESA COMPUTADORA 0.7CM X 0.53CM.png",
+        "MESA DE VIDRIO COLOR HUMO 2MTS X 1MT.png",
+        "MESA MADERA 0.80 X 0.80 EXTENSIBLE A 1.60 MT.png",
+        "MESA EXTENDIDA.png",
+        "MESA LUZ MADERA CON TAPA MARMOL 0.50CM X 0.38CM.png",
+        "MESA MADERA CON VIDRIO ARRIBA 1.90mt x 1 mt Y 4 SILLAS MADERA CON TAPIZADO.png",
+        "MESA RATONA 1MT X 0.55CM.png",
+        "MESA RATONA DE MADERA ANTIGUA 0.57CM X 0.38CM.png",
+        "MESA RATONA MADERA Y VIDRIO 0.90CM X 0.50CM.png",
+        "MESA RATONA MARMOL Y HIERRO 0.50CM X 0.50CM.png",
+        "MESA TV 0.90CM X 0.60CM.png",
+        "MESA TV MADERA 0.70CM X 0.43CM.png",
+        "MESITA MADERA 0.40X 0.30X 0.67 DE ALTO.png",
+        "MUEBLE BAR CON RUEDAS TAPA AZULEJO BLANCA 0.50 CM X 0.38CM X 0.83 CM.png",
+        "MUJER.png",
+        "RACK DE TV 2.55MT X 0.60CM.png",
+        "RELOJ ANTIGUO DE PARED.png",
+        "RESPALDO CAMA 2MTS.png",
+        "SILLA ANTIGUA TAPIZADA.png",
+        "SILLA CON ESTERILLA.png",
+        "SILLA CON RESPALDO DE CUERO TALLADO.png",
+        "SILLA DE ADERA Y TAPIZADO.png",
+        "SILLA MADERA Y CUERINA.png",
+        "SILLON CAMA 1.45MTS X 0.90CM.png",
+        "SILLON CAMA ABIERTO.png",
+        "SILLON DE CABECERA.png",
+        "SILLON INDIVIDUAL.png",
+        "SOMIER DOS PLAZAS 1,40 MT X 1,90 MT.png",
+        "SOMIER INDIVIDUAL CON COLCHON 1.90MTS X 0.80 MTS.png",
+        "VAJILLERO CHICO  CON TAPA MARMOL BLANCO 1.15MT X 0.32CM.png",
+        "VAJILLERO DE MADERA CON TAPA DE MARMOL DE 2.50 X 0.5.png",
+        "VELADOR POR DOS.png",
+        "MUEBLECITO ANTIGUO 0,40x0,30 x 0,80 de alto.png",
+        "SILLA DE MADERA TAPIZADA.png"
     ];
+
 
     // 1. Seleccionar el contenedor principal
     const catalogoContainer = document.querySelector(".catalogo-container");
@@ -74,12 +85,12 @@ document.addEventListener("DOMContentLoaded", () => {
         // Construir la ruta completa de la imagen
         const pathFoto = `Fotos/${nombreArchivo}`;
 
-        // Obtener el nombre sin extensión (ej: "Silla.png" -> "Silla")
-        // Este método funciona incluso si el nombre tiene puntos (ej: "Silla.v2.png" -> "Silla.v2")
+        // Obtener el nombre sin extensiï¿½n (ej: "Silla.png" -> "Silla")
+        // Este mï¿½todo funciona incluso si el nombre tiene puntos (ej: "Silla.v2.png" -> "Silla.v2")
         const nombreProducto = nombreArchivo.substring(0, nombreArchivo.lastIndexOf('.')) || nombreArchivo;
 
-        // Crear el bloque HTML para este producto (¡SIN PRECIO!)
-        // Nota: También he actualizado el link de WhatsApp para que use el nombre del producto
+        // Crear el bloque HTML para este producto (ï¿½SIN PRECIO!)
+        // Nota: Tambiï¿½n he actualizado el link de WhatsApp para que use el nombre del producto
         const productoHTML = `
         <section class="producto-card">
             <div class="producto-imagen">
@@ -108,7 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     // ======================================================
-    // --- CÓDIGO ORIGINAL DEL LIGHTBOX (AHORA SE EJECUTA DESPUÉS) ---
+    // --- Cï¿½DIGO ORIGINAL DEL LIGHTBOX (AHORA SE EJECUTA DESPUï¿½S) ---
     // ======================================================
 
     // 1. Seleccionar los elementos del DOM del Lightbox
@@ -116,10 +127,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const lightboxImg = document.getElementById("lightbox-img");
     const cerrarBtn = document.querySelector(".lightbox-cerrar");
 
-    // Selecciona TODAS las imágenes de producto (que acabamos de crear)
+    // Selecciona TODAS las imï¿½genes de producto (que acabamos de crear)
     const imagenesProducto = document.querySelectorAll(".producto-imagen img");
 
-    // 2. Función para abrir el Lightbox (sin cambios)
+    // 2. Funciï¿½n para abrir el Lightbox (sin cambios)
     function abrirLightbox(e) {
         const imgElement = e.currentTarget;
         const fullSrc = imgElement.dataset.fullsrc || imgElement.src;
@@ -127,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
         lightbox.classList.add("visible");
     }
 
-    // 3. Función para cerrar el Lightbox (sin cambios)
+    // 3. Funciï¿½n para cerrar el Lightbox (sin cambios)
     function cerrarLightbox() {
         lightbox.classList.remove("visible");
         lightboxImg.src = "";
@@ -140,10 +151,10 @@ document.addEventListener("DOMContentLoaded", () => {
         img.addEventListener("click", abrirLightbox);
     });
 
-    // Al botón 'X' le asignamos el clic para CERRAR
+    // Al botï¿½n 'X' le asignamos el clic para CERRAR
     cerrarBtn.addEventListener("click", cerrarLightbox);
 
-    // También cerramos si el usuario hace clic FUERA de la imagen
+    // Tambiï¿½n cerramos si el usuario hace clic FUERA de la imagen
     lightbox.addEventListener("click", (e) => {
         if (e.target === lightbox) {
             cerrarLightbox();
