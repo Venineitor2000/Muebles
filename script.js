@@ -60,7 +60,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "SILLON CAMA 1.45MTS X 0.90CM.png",
         "SILLON CAMA ABIERTO.png",
         "LAMPARA.png",
-        "LAMPARA AZUL.png",
         "VELADOR POR DOS.png",
         "lampara de escritorio.png",
         "lampara de pie.png",
@@ -76,7 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
         "ESPADAS 0.25CM X 0.20CM.png",
         "ESTATUA 0.30CM.png",
         "2 adornos cisne.png",
-        "2 bases de velador angelitos.png",
         "2 jarras cerveceras con manijas.png",
         "2 jarras cerveceras grandes y 2 chicas.png",
         "2 jarras cerveceras plateadas.png",
@@ -95,9 +93,11 @@ document.addEventListener("DOMContentLoaded", () => {
         "percha valet madera clara.png",
         "porcelana limoge .png",
         "potiche ceramica.png",
-        "potiche plateado con base.png"
+        "potiche plateado con base.png",
+        "espejo particionado.png",
+        "espejo cuadricula con estante.png",
+        "espejo madera 1.10 x 0.50.png"
     ];  
-        
     // 1. Seleccionar el contenedor principal
     const catalogoContainer = document.querySelector(".catalogo-container");
 
