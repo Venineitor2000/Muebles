@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "BANQUETA TAPIZADA por 3 unidades.png",
         "ESCRITORIO ANTIGUO 1.30MT X 0.7CM.png",
         "RELOJ ANTIGUO DE PARED.png",
-        "JUEGO LIVING 1 SILLON 3 CUERPOS Y DOS DE 1 CUERPO.png",
+        "JUEGO LIVING 1 SILLON 3 CUERPOS DE 1.80 X 0.90 X 0.80 Y DOS DE 1 CUERPO DE 0.77 X 0.90 X 0.83.png",
         "MESA DE VIDRIO COLOR HUMO 2MTS X 1MT.png",
         "ARAÑA COLGANNTE.png",
         "ARAÑA DE CAIRELES.png",
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "SILLA CON RESPALDO DE CUERO TALLADO por 2 unidades.png",
         "SILLA DE MADERA LAQUEADA Y TAPIZADA por 6 unidades.png",
         "SILLA MADERA Y CUERINA por 4 unidades.png",
-        "SILLON INDIVIDUAL.png",
+        "SILLON INDIVIDUAL 0.77 x 0.90 x 0.83.png",
         "MESA LUZ MADERA CON TAPA MARMOL 0.50CM X 0.38CM.png",
         "BUTACA MADERA por 3 unidades.png",
         "MESA MADERA 0.80 X 0.80 EXTENSIBLE A 1.60 MT.png",
@@ -80,10 +80,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "2 jarras cerveceras plateadas.png",
         "2 portavelas ceramica.png",
         "6 jarras cerveceras.png",
-        "jarra de sangria y 5 vasos cerveceros.png",
+        "jarra de sangria y 5 vasos.png",
         "cajonera y baulera cabecera de cama 0.90 x 0.40 .png",
         "escritorio 1.20 x 0.80 .png",
-        "fuente decorativa .png",
+        "fuente decorativa 0.30 x 0.64 .png",
         "jarron chino.png",
         "jarron floreado.png",
         "jarron plateado.png",
@@ -91,12 +91,12 @@ document.addEventListener("DOMContentLoaded", () => {
         "paraguero de ceramica.png",
         "percha valet de madera oscura.png",
         "percha valet madera clara.png",
-        "porcelana limoge .png",
+        "porcelana limoge original.png",
         "potiche ceramica.png",
         "potiche plateado con base.png",
-        "espejo particionado.png",
-        "espejo cuadricula con estante.png",
-        "espejo madera 1.10 x 0.50.png"
+        "espejo particionado 0.80x 0.7.png",
+        "espejo cuadricula con estante 0.50 x 0.76.png",
+        "espejo madera 1m x 0.55.png"
     ];  
     // 1. Seleccionar el contenedor principal
     const catalogoContainer = document.querySelector(".catalogo-container");
