@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "2 jarras cerveceras plateadas.png",
         "2 portavelas ceramica.png",
         "6 jarras cerveceras.png",
-        "jarra de sangria  y 5 vasos.png",
+        "jarra de sangria y 5 vasos cerveceros.png",
         "cajonera y baulera cabecera de cama 0.90 x 0.40 .png",
         "escritorio 1.20 x 0.80 .png",
         "fuente decorativa .png",
