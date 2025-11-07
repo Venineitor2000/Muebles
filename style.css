@@ -92,11 +92,15 @@ html, body {
 
 /* --- ESTILO AGREGADO PARA EL PRECIO --- */
 .producto-precio {
+    display: none;
     font-size: 1.3rem; /* 20px - Un poco más chico que el título */
     font-weight: 500; /* Peso medio */
     color: #444; /* Un gris oscuro, no tan fuerte como el negro */
     margin-bottom: 15px; /* Espacio antes del botón */
 }
+
+
+
 /* --- FIN DEL ESTILO AGREGADO --- */
 
 
