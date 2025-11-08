@@ -106,7 +106,6 @@ document.addEventListener("DOMContentLoaded", () => {
         { archivo: "espejo madera 1m x 0.55.png", precio: "$ 35.000.-" }
     ];
 
-    alert(catalogoProductos.length);
 
     // 1. Seleccionar el contenedor principal
     const catalogoContainer = document.querySelector(".catalogo-container");
