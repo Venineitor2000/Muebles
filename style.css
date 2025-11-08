@@ -64,6 +64,9 @@ html, body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    /* --- CAMBIO REQUERIDO --- */
+    /* Necesario para posicionar el texto "VENDIDO" encima */
+    position: relative;
 }
 
     .producto-imagen img {
@@ -71,7 +74,7 @@ html, body {
         max-height: 100%;
         object-fit: contain; /* Asegura que la imagen se vea completa, sin deformar */
         cursor: pointer;
-        transition: transform 0.2s ease;
+        transition: transform 0.2s ease, filter 0.3s ease; /* Añadida transición para filtro */
     }
 
         .producto-imagen img:hover {
@@ -98,7 +101,6 @@ html, body {
     color: #444; /* Un gris oscuro, no tan fuerte como el negro */
     margin-bottom: 15px; /* Espacio antes del botón */
 }
-
 
 
 /* --- FIN DEL ESTILO AGREGADO --- */
@@ -158,6 +160,44 @@ html, body {
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
+}
+
+/* ======================================================
+  --- NUEVOS ESTILOS PARA PRODUCTOS VENDIDOS ---
+  ======================================================
+*/
+
+/* 1. Pone la imagen en escala de grises y reduce opacidad */
+.producto-imagen.vendido img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+    cursor: not-allowed; /* Cambia el cursor para indicar que no es clickeable */
+}
+
+/* 2. Crea el texto "VENDIDO" superpuesto */
+.producto-imagen.vendido::after {
+    content: "VENDIDO"; /* El texto que se mostrará */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-10deg); /* Centrado y rotado */
+
+    color: red; /* Color de texto rojo */
+    font-size: 2.5rem; /* Tamaño grande (ajusta según necesites) */
+    font-weight: 900; /* Letra bien gruesa */
+    text-transform: uppercase;
+    /* Sombra para que se lea bien sobre cualquier fondo de imagen */
+    text-shadow: 2px 2px 0 #fff, -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff;
+    z-index: 10; /* Se asegura que esté por encima de la imagen */
+    /* Evita que este texto bloquee el (ahora desactivado) clic */
+    pointer-events: none;
+}
+
+/* En Desktop, hacemos el texto de "VENDIDO" más grande */
+@media (min-width: 768px) {
+    .producto-imagen.vendido::after {
+        font-size: 3rem;
+    }
 }
 
 
