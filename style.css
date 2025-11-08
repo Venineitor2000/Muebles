@@ -169,8 +169,7 @@ html, body {
 
 /* 1. Pone la imagen en escala de grises y reduce opacidad */
 .producto-imagen.vendido img {
-    filter: grayscale(100%);
-    opacity: 0.5;
+    
     cursor: not-allowed; /* Cambia el cursor para indicar que no es clickeable */
 }
 
@@ -182,7 +181,7 @@ html, body {
     left: 50%;
     transform: translate(-50%, -50%) rotate(-10deg); /* Centrado y rotado */
 
-    color: red; /* Color de texto rojo */
+    color: blue; /* Color de texto rojo */
     font-size: 2.5rem; /* Tamaño grande (ajusta según necesites) */
     font-weight: 900; /* Letra bien gruesa */
     text-transform: uppercase;
