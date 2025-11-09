@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
      * Modifica el 'precio' de cada producto.
      * --- NUEVO: Modifica 'vendido' a 'true' si el producto ya no está disponible ---
      */
+
     const catalogoProductos = [
         { archivo: "BARCITO BODEGA 0.60CM X 0.36.png", precio: "$ 180.000.-", vendido: false },
         { archivo: "BARRA DE BAR DE 1.60MT X 1MT.png", precio: "$ 230.000.-", vendido: false },
@@ -96,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { archivo: "payaso lladro original.png", precio: "$ 35.000.-", vendido: false },  
         { archivo: "juego de platil.png", precio: "$ 180.000.-", vendido: false },
         { archivo: "paraguero de ceramica.png", precio: "$ 45.000.-", vendido: false },
-        { archivo: "percha valet de madera oscura.png", precio: "$ 30.000.-", vendido: false },
+        { archivo: "percha valet de madera oscura.png", precio: "$ 30.000.-", vendido: true },
         { archivo: "percha valet madera clara.png", precio: "$ 30.000.-", vendido: true },
         { archivo: "porcelana limoge original.png", precio: "$ 50.000.-", vendido: false },
         { archivo: "potiche ceramica.png", precio: "$ 25.000.-", vendido: false },
