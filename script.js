@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { archivo: "SOMIER DOS PLAZAS 1,40 MT X 1,90 MT.png", precio: "$ 90.000.-", vendido: false },
         { archivo: "RESPALDO CAMA 2MTS.png", precio: "$ 100.000.-", vendido: true },
         { archivo: "SOMIER INDIVIDUAL CON COLCHON 1.90MTS X 0.80 MTS.png", precio: "$ 120.000.-", vendido: false },
-        { archivo: "Cama con respaldo de una plaza con cama marinera abajo.png", precio: "$ 120.000.-", vendido: false },
+        { archivo: "Cama con respaldo de una plaza con cama marinera abajo.png", precio: "$ 140.000.-", vendido: false },
         { archivo: "CAJONERA 0.50CM X 0.38 CM.png", precio: "$ 30.000.-", vendido: true },
         { archivo: "COMODA CON CAJONES Y VIDRIO ARRIBA 1.30MTS X 0.5CM.png", precio: "$ 100.000.-", vendido: false },
         { archivo: "LAVARROPAS DREAM EXCELLENT CARGA FRONTAL 0.85CM X 0.60CM.png", precio: "$ 180.000.-", vendido: false },
