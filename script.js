@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const catalogoProductos = [
         { archivo: "BARCITO BODEGA 0.60CM X 0.36.png", precio: "$ 180.000.-", vendido: false },
         { archivo: "BARRA DE BAR DE 1.60MT X 1MT.png", precio: "$ 230.000.-", vendido: false },
+        { archivo: "BARRA DE BAR VISTA DESDE ATRAS.png", precio: "", vendido: false },
         { archivo: "VAJILLERO DE MADERA CON TAPA DE MARMOL DE 2.50 X 0.5.png", precio: "$ 270.000.-", vendido: true },
         { archivo: "VAJILLERO CHICO  CON TAPA MARMOL BLANCO 1.15MT X 0.32CM.png", precio: "$ 180.000.-", vendido: false },
         { archivo: "RACK DE TV 2.55MT X 0.60CM.png", precio: "$ 220.000.-", vendido: false },
@@ -40,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { archivo: "SILLA CON RESPALDO DE CUERO TALLADO por 2 unidades.png", precio: "$ 70.000.- cada una", vendido: false },
         { archivo: "SILLA DE MADERA LAQUEADA Y TAPIZADA por 6 unidades.png", precio: "$ 60.000.- cada una", vendido: false },
         { archivo: "SILLA MADERA Y CUERINA por 4 unidades.png", precio: "$ 30.000.-cada una", vendido: true },
+        { archivo: "Silla estérillada por 6 unidades.png", precio: "$ 60.000.-cada una", vendido: false },
         { archivo: "SILLON INDIVIDUAL 0.77 x 0.90 x 0.83.png", precio: "$ 75.000.-", vendido: false },
         { archivo: "MESA LUZ MADERA CON TAPA MARMOL 0.50CM X 0.38CM.png", precio: "$ 70.000.-", vendido: false },
         { archivo: "BUTACA MADERA por 3 unidades.png", precio: "$ 20.000.-cada una", vendido: true },
@@ -51,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { archivo: "SOMIER DOS PLAZAS 1,40 MT X 1,90 MT.png", precio: "$ 90.000.-", vendido: false },
         { archivo: "RESPALDO CAMA 2MTS.png", precio: "$ 100.000.-", vendido: true },
         { archivo: "SOMIER INDIVIDUAL CON COLCHON 1.90MTS X 0.80 MTS.png", precio: "$ 120.000.-", vendido: false },
+        { archivo: "Cama con respaldo de una plaza con cama marinera abajo.png", precio: "$ 120.000.-", vendido: false },
         { archivo: "CAJONERA 0.50CM X 0.38 CM.png", precio: "$ 30.000.-", vendido: true },
         { archivo: "COMODA CON CAJONES Y VIDRIO ARRIBA 1.30MTS X 0.5CM.png", precio: "$ 100.000.-", vendido: false },
         { archivo: "LAVARROPAS DREAM EXCELLENT CARGA FRONTAL 0.85CM X 0.60CM.png", precio: "$ 180.000.-", vendido: false },
