@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { archivo: "juego 6 jarras cerveceras.png", precio: "$ 70.000.-", vendido: false },
         { archivo: "jarra de sangria y 5 vasos.png", precio: "$ 80.000.-", vendido: false },
         { archivo: "cajonera y baulera cabecera de cama 0.90 x 0.40 .png", precio: "$ 30.000.-", vendido: false },
-        { archivo: "escritorio 1.20 x 0.80 .png", precio: "$ 70.000.-", vendido: true },
+        { archivo: "escritorio 1.20 x 0.80 .png", precio: "$ 70.000.-", vendido: false },
         { archivo: "fuente decorativa 0.30 x 0.64 .png", precio: "$ 40.000.-", vendido: false },
         { archivo: "jarron chino.png", precio: "$ 70.000.-", vendido: false },
         { archivo: "jarron floreado.png", precio: "$ 50.000.-", vendido: false },
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { archivo: "potiche plateado con base.png", precio: "$ 30.000.-", vendido: false },
         { archivo: "espejo particionado 0.80x 0.7.png", precio: "$ 50.000.-", vendido: false },
         { archivo: "espejo cuadricula con estante 0.50 x 0.76.png", precio: "$ 40.000.-", vendido: true },
-        { archivo: "espejo madera 1m x 0.55.png", precio: "$ 35.000.-", vendido: false }
+        { archivo: "espejo madera 1m x 0.55.png", precio: "$ 35.000.-", vendido: true }
         
 
     ];
