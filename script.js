@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { archivo: "bahiut madera 2.20mt x 0.47 x 1.30 de alto.png", precio: "$ 220.000.-", vendido: false },
         { archivo: "BANQUETA TAPIZADA por 3 unidades.png", precio: "$ 40.000.-cada uno", vendido: false },
         { archivo: "ESCRITORIO ANTIGUO 1.30MT X 0.7CM.png", precio: "$ 150.000.-", vendido: true },
-        { archivo: "RELOJ ANTIGUO DE PARED.png", precio: "$ 110.000.", vendido: false },
+        { archivo: "RELOJ ANTIGUO DE PARED.png", precio: "$ 110.000.", vendido: true },
         { archivo: "JUEGO LIVING 1 SILLON 3 CUERPOS DE 1.80 X 0.90 X 0.80 Y DOS DE 1 CUERPO DE 0.77 X 0.90 X 0.83.png", precio: "$ 400.000.-", vendido: false },
         { archivo: "MESA DE VIDRIO COLOR HUMO 2MTS X 1MT.png", precio: "$ 220.000.-", vendido: false },
         { archivo: "ARAÑA COLGANNTE.png", precio: "$ 150.000.-", vendido: false },
