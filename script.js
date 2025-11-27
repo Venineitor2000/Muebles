@@ -12,13 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
      */
 
     const catalogoProductos = [
-        { archivo: "BARCITO BODEGA 0.60CM X 0.36.png", precio: "$ 180.000.-", vendido: false },
         { archivo: "MESA MADERA 0.80 X 0.80 EXTENSIBLE A 1.60 MT.png", precio: "$ 120.000.-", vendido: false },
         { archivo: "MESA EXTENDIDA.png", precio: "", vendido: false },
         { archivo: "BARRA DE BAR DE 1.60MT X 1MT.png", precio: "$ 230.000.-", vendido: false },
         { archivo: "BARRA DE BAR VISTA DESDE ATRAS.png", precio: "", vendido: false },
         { archivo: "VAJILLERO DE MADERA CON TAPA DE MARMOL DE 2.50 X 0.5.png", precio: "$ 270.000.-", vendido: false },
-        { archivo: "VAJILLERO CHICO  CON TAPA MARMOL BLANCO 1.15MT X 0.32CM.png", precio: "$ 180.000.-", vendido: false },
+        { archivo: "VAJILLERO CHICO  CON TAPA MARMOL BLANCO 1.15MT X 0.32CM.png", precio: "$ 180.000.-", vendido: true },
         { archivo: "ESPEJO BORDE LAQUEADO NEGRO 1MT X 0.6 CON REBORDE.png", precio: "$ 75.000.-", vendido: false },
         { archivo: "bahiut madera 2.20mt x 0.47 x 1.30 de alto.png", precio: "", vendido: false },
         { archivo: "interior del baihut .png", precio: "$ 220.000.-", vendido: false },
